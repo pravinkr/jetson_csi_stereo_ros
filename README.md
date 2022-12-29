@@ -53,6 +53,10 @@ $ roslaunch jetson_csi_stereo_ros jetson_csi_stereo.launch
 $ roslaunch jetson_csi_stereo_ros jetson_csi_stereo_left.launch
 $ roslaunch jetson_csi_stereo_ros jetson_csi_stereo_right.launch
 
+# OR launch using single launch file
+
+$ roslaunch jetson_csi_stereo_ros jetson_csi_stereo_pipeline.launch
+
 
 ```
 For Jetson Xavier NX Dev Kit, if your left camera is CAM1 and right camera is CAM0, modify sensor-id in launch file.
