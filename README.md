@@ -46,6 +46,14 @@ $ git clone https://github.com/borongyuan/jetson_csi_stereo_ros.git
 ### Step 5 Test Camera
 ```bash
 $ roslaunch jetson_csi_stereo_ros jetson_csi_stereo.launch
+
+# The above launch file didn't work as it is publishing only one camera at a time.
+# Had to create seperate launch files for left and right camera and launched them seperately. It works.
+
+$ roslaunch jetson_csi_stereo_ros jetson_csi_stereo_left.launch
+$ roslaunch jetson_csi_stereo_ros jetson_csi_stereo_right.launch
+
+
 ```
 For Jetson Xavier NX Dev Kit, if your left camera is CAM1 and right camera is CAM0, modify sensor-id in launch file.
 ### Step 6 Stereo Camera Calibration
